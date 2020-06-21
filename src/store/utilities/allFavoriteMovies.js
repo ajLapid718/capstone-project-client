@@ -31,7 +31,7 @@ const removeFavoriteMovie = (movieID) => {
 // THUNKS
 export const fetchFavoriteMoviesThunk = (id) => (dispatch) => {
     return Axios
-        .get(`/api/users/${id}/movies`)
+        .get(`https://cuny-capstone-server.herokuapp.com/api/users/${id}/movies`)
         .then((res) => res.data)
         .then((movies) => {
             dispatch(fetchFavoriteMovies(movies));
@@ -41,7 +41,7 @@ export const fetchFavoriteMoviesThunk = (id) => (dispatch) => {
 
 export const addFavoriteMovieThunk = (movied, id) => (dispatch) => {
     return Axios
-        .post(`/api/users/favorite/${id}`)
+        .post(`https://cuny-capstone-server.herokuapp.com/api/users/favorite/${id}`)
         .then((movie) => {
             dispatch(addFavoriteMovie(movie));
         })
@@ -50,7 +50,7 @@ export const addFavoriteMovieThunk = (movied, id) => (dispatch) => {
 
 export const removeFavoriteMovieThunk = (userID, movieID) => (dispatch) => {
     return Axios
-        .delete(`/api/users/${userID}/movies/remove/${movieID}`)
+        .delete(`https://cuny-capstone-server.herokuapp.com/api/users/${userID}/movies/remove/${movieID}`)
         .then((res) => res.data)
         .then(() => dispatch(removeFavoriteMovie(movieID)))
         .catch((error) => console.log(error));
