@@ -1,0 +1,74 @@
+.home-page {
+    background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .home-page {
+        background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: stretch;   
+        
+    }
+    .container {
+        display: flex;
+        overflow: auto;
+    }
+  }
+
+.lead {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+    color: black;
+}
+
+.container {
+    display: grid;
+    justify-content: center ;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+
+/*.card-header,
+.card-body,
+.card-footer {
+    border-style: groove;
+}*/
+
+.card-header,
+.card-body {
+    border-bottom: solid;
+    border-color: black;
+    font-size: 17.5px;
+    color: snow;
+}
+
+.card-body :hover{
+    width: 100%;  
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;    
+}
+
+.card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: solid;
+    border-bottom: solid;
+}
+

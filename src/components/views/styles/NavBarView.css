@@ -1,0 +1,26 @@
+.nav-text {
+  text-align: center;
+  background-color: teal;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.nav-bar {
+  background-color: darkslategray;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.buttons {
+  border-radius: 5px;
+  border-color: orange;
+  background-color: orange;
+  padding: 1rem;
+  margin: 1rem;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.nav-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
